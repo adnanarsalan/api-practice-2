@@ -13,11 +13,11 @@ fetch(`https://www.thesportsdb.com/api/v1/json/2/searchplayers.php?p=${searchTex
 }
 const showPlayerDetails = (players) => {
               
+            
+          
+
+for(const player of players){
                
-
-
-for(const player of players ){
-
                const parent = document.getElementById("player-container");
 
                const div = document.createElement('div');
@@ -28,7 +28,7 @@ for(const player of players ){
                  <img src="${player.strThumb}" class="card-img-top" alt="...">
                  <div class="card-body">
                  <h2>name:${player.strPlayer}</h2>
-                   <h5 class="card-title">Rokib</h5>
+                   <h5 class="card-title"></h5>
                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                    <a href="#" class="btn btn-primary">Go somewhere</a>
                    <button onclick="next('${player.idPlayer}')"
@@ -61,11 +61,12 @@ const setDetails=(info) => {
                document.getElementById("player-container").innerHTML=`
                
                <div class="alignment">
-               <img src="image/bike.jpg" width="250"  height="250" alt=""> 
+               <img src="${info. strFanart1} " width="250"  height="250" alt=""> 
                <h1> Name: ${info.strPlayer} </h1>
+               <h1> Born: ${info.dateBorn} </h1>
                </div>`;
                
-
+              
 
 
 }

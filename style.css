@@ -1,0 +1,44 @@
+h1 {
+color:gold;
+color: white;
+               text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+
+color:aquamarine;
+color: gold;
+               text-shadow: 2px 2px 4px #000000;
+
+}
+.dogButton {
+
+               border-radius: 50%;         
+               width:100px;
+               height:100px;
+               background-color:antiquewhite;
+               border-style: double;
+               box-shadow: 5px 7px 2px 1px rgba(0, 0, 255, .2);
+               
+               
+               
+               
+         }
+         #img02 {
+         
+         width:70px;
+         height: 70px ;
+         clip-path: circle();
+         
+         }
+
+
+.header {
+
+               color: white;
+               text-shadow: 2px 2px 4px #000000;
+             
+               text-align: center;
+
+
+}

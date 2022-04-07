@@ -1,4 +1,4 @@
-const searchFood =() => {
+const loadData =() => {
 const searchField = document.getElementById("search-field");
 const searchText = searchField.value;
 
@@ -25,14 +25,14 @@ for(const player of players){
                
                
                <div class="card" style="width: 18rem;">
-                 <img src="${player.strThumb}" class="card-img-top" alt="...">
+                 <img src="${player.strRender}" class="card-img-top" alt="...">
                  <div class="card-body">
                  <h2>name:${player.strPlayer}</h2>
                    <h5 class="card-title"></h5>
                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                    <a href="#" class="btn btn-primary">Go somewhere</a>
                    <button onclick="next('${player.idPlayer}')"
-                   class="btn btn-success">NEXT</button>
+                   class="btn btn-success">DETAILS</button>
                  </div>
                </div>
                
@@ -61,9 +61,13 @@ const setDetails=(info) => {
                document.getElementById("player-container").innerHTML=`
                
                <div class="alignment">
-               <img src="${info. strFanart1} " width="250"  height="250" alt=""> 
+
+               <img src="${info. strRender} " width="250"  height="250" alt=""> 
                <h1> Name: ${info.strPlayer} </h1>
                <h1> Born: ${info.dateBorn} </h1>
+               <h2> height: ${info.strHeight} </h2>
+               <h2> weight: ${info.strWeight} <h2>
+
                </div>`;
                
               
@@ -74,6 +78,18 @@ const setDetails=(info) => {
 
 
 
+function pic ()
+{
+
+     let isha = document.getElementById("img02")
+    isha.src="image/football.jpg"
+}
+function pic2 ()
+{
+
+     let isha = document.getElementById("img02")
+    isha.src="image/adnan.jpg"
+}
 
 
   
